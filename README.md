@@ -1,4 +1,4 @@
 
-# A brief introduction into HTML5 and the JavaScript ecosystem
+# Quick introduction: CSS
 
 Presentation powered by FSReveal
