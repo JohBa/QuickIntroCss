@@ -6,7 +6,7 @@
 
 ***
 
-## Javascript Ecosystem
+## Quick Intro: CSS
 
 <img style="border-style: none" border="0" src="images/AIT-Logo_small.jpg" />
 
@@ -341,9 +341,162 @@ Demo!
 
 ### Roadmap
 
-- CSS
+ - CSS
  - **SASS**
  - B/Fulma
+
+---
+
+### Syntactically Awesome StyleSheets
+
+(or SCSS -> other syntax)
+
+- preprocessor
+- variables
+- nesting
+- mixins
+- own functions
+- extend/inheritance
+
+---
+
+### Variables
+
+```css
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+```
+
+---
+
+### Nesting
+
+```css
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+```
+
+```css
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+```
+
+---
+
+### Mixins
+
+```css
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform:     $property
+  transform:         $property
+
+.box
+  +transform(rotate(30deg))
+```
+
+```css
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+```
+
+---
+
+### Own functions
+
+```css
+$random = 2
+
+@function column-width($col, $total:8) {  
+ @return percentage($col/($total+$random));  
+}
+
+.col-3
+ width: column-width(3, 8);  
+
+```
+
+```css
+.col-3 {  
+ width: 30%;  
+}
+```
+
+---
+
+### Extend/inheritance
+
+```css
+%message-shared
+  border: 1px solid #ccc
+  color: #333
+
+.message
+  @extend %message-shared
+
+.success
+  @extend %message-shared
+  border-color: green
+```
+
+```css
+.message, .success {
+  border: 1px solid #cccccc;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+```
+
+---
+
+### SCSS
+
+- other (verbose) syntax
+
+```css
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform:     $property
+  transform:         $property
+
+.box
+  +transform(rotate(30deg))
+```
+
+```css
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+.box { @include transform(rotate(30deg)); }
+```
+
+' klammern, semikolon, teils einfache symbole statt wörter
 
 ---
 
