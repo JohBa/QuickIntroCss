@@ -8,5 +8,8 @@
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 # SASS
+- https://sass-lang.com/guide
+- https://sass-lang.com/documentation/file.SASS_REFERENCE.html
+- https://vanseodesign.com/css/custom-sass-functions/
 
 # BULMA & FULMA
