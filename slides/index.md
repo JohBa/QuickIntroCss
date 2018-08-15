@@ -80,6 +80,8 @@ Selector1 [, Selector2 [, …] ] {
 }
 ```
 
+https://www.w3schools.com/cssref/
+
 ---
 
 ### Selectors
@@ -125,6 +127,8 @@ Selector1 [, Selector2 [, …] ] {
 
 ```html
 <div class="widget">Widget</div>
+<div class="widget widget2">Widget</div>
+<div class="widget" id="firstname">Widget with id</div>
 ```
 
 <div class="widget">Widget</div>
@@ -156,6 +160,7 @@ div .inside {
 </div>
 
 ' Selects all "inside" elements inside "div" elements
+' tiefe egal, daher hier schlecht zeigbar
 
 ---
 
@@ -171,12 +176,14 @@ div .inside {
   <div class="inner">Inside</div>
   <span class="child">Child</span>
 </div>
+<div><span class="child">Child</span></div>
 ```
 
 <div class="parent">
   <div class="inner">Inside</div>
   <span class="child">Child</span>
 </div>
+<div><span class="child">Child</span></div>
 
 ' Selects all "child" elements where the parent is a "parent" element
 
@@ -289,7 +296,7 @@ Lorem ipsum dolor sit amet <p class="inline-block">INLINE-BLOCK!</p> Vestibulum 
 
 ```css
 .flexcontainer { display: flex; flex-direction: row; flex-wrap: wrap; }
-.block { background: green; border: 1px solid white; }
+.flexblock { background: green; border: 1px solid white; }
 ```
 
 ```html

@@ -3,6 +3,7 @@
 
 - https://www.w3schools.com/html/html_css.asp
 - https://www.w3schools.com/css/
+- https://www.w3schools.com/cssref/
 - https://de.wikipedia.org/wiki/Cascading_Style_Sheets
 - https://css-tricks.com/the-difference-between-id-and-class/
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
